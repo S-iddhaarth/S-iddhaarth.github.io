@@ -36,8 +36,33 @@
 .backgroundContainer {
     min-height: fit-content;
     display: flex;
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    font-weight: 100;
+    white-space: nowrap;
 }
 
+.text-overlay2 {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    font-weight: 100;
+    white-space: nowrap;
+}
 #bgimg {
-    opacity: 0.8;
+    opacity: 1;
 }
