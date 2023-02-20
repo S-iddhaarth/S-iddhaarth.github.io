@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.NavigationContainer {
+    min-height: 100px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(30, 28, 28);
+
+}
+
+.buttonContainer {
+    min-height: 200%;
+    min-width: 10%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.buttonContainer:hover {
+    background-color: rgb(250, 0, 0);
+}
+
+.backgroundContainer {
+    min-height: fit-content;
+    display: flex;
+}
+
+#bgimg {
+    opacity: 0.8;
+}
