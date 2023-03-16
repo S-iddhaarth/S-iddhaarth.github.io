@@ -1,0 +1,183 @@
+:root{
+    --background-color: rgba(0, 0, 0, 0.982);
+    --link-width-size:15px;
+    --link-height-size:10px;
+    --image-link-before-hover:rgb(255, 255, 255);
+    --image-link-after-hover:rgb(200, 255, 0);
+    --under-image-size:20%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+html,body{ 
+    height: 200%;
+    width: 100%;
+}
+
+.container { 
+    display: inline flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+.item{
+    display: flex;
+
+    align-content: center;
+    
+}
+
+.navBarFlex { 
+    height: 100%;
+    flex:0;
+    will-change: transform;
+}
+
+.contentFlex {
+    flex: 1;
+    width: 94%;
+    display: inline flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contentItem{
+    display: inline flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.titleFlex{
+
+    background-image: url('images/background4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.contentFlex{
+    display: flex;
+    width: 100%;
+}
+.pageTitle{
+    display: inline flex;
+    height: fit-content;
+    
+}
+.titleFlex h1{
+    font-size: 5rem;
+    color:white;
+    text-shadow: 5px 5px 0px black;
+}
+
+.textOfpage{
+    padding-top:2rem;
+}
+.textOfpage a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(244, 39, 39);
+}
+
+.contentItem{
+    display: flex;
+
+}
+.imageHolder{
+    background-color: rgb(22, 26, 50);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.subjects{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 32%;
+    height: 45%;
+    flex-direction: row;
+    transition: transform 0.8s ease-out;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.mfc{
+    background-image: url('images/mathematicForComputiting.jpg');
+}
+
+.java{
+    background-image: url('images/javaBetter.jpg');
+    background-size: cover;
+}
+
+.dsa{
+    background-image: url('images/DataStructureNalgorythm.jpg');
+    background-size: cover;
+}
+
+.ui{
+    background-image: url('images/userInterfaceDarker.jpg');
+    background-size: cover;
+}
+.eoc{
+    background-image: url('images/DigitalElectronicsNew.jpg');
+    background-size:cover;
+}
+.eee{
+    background-image: url('images/ElectricalnElectronics.png');
+}
+
+.subjects:hover a,.subjects:hover{
+    transform: scale(1.05);
+    color:var(--image-link-after-hover);
+}
+.innerLink{
+    border-radius: 1rem;
+    padding-top:var(--link-height-size);
+    padding-left: var(--link-width-size);
+    padding-right: var(--link-width-size);
+    padding-bottom: var(--link-height-size);
+    justify-content: center;
+    align-items: center;
+    background-color:var(--background-color);
+}
+
+.innerLink a{
+    text-align: center;
+    text-justify: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--image-link-before-hover);
+    font-size: 1.5rem;
+    transition: color 0.8s ease-out;
+}
+.underContainer{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.underImage{
+    display: flex;
+}
+.mfcunder{
+    background-image: url('images/belowMFC.jpg');
+    height: var(--under-image-size);
+}
+.javaunder{
+    background-image: url('images/im1.jpg');
+    background-size: cover;
+    height: var(--under-image-size);
+}
