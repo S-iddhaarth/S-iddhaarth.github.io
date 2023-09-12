@@ -25,7 +25,7 @@
             var correctPassword = "your_password";
 
             if (username === correctUsername && password === correctPassword) {
-                window.location.href = "page.html"; // Redirect to index.html
+                window.location.replace("page.html");  // Redirect to index.html
             } else {
                 alert("Incorrect username or password. Please try again.");
             }
